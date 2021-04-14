@@ -1,0 +1,459 @@
+body{
+  margin: 0;
+  top: 0;
+  background-color: #97bb98;
+}
+.header { 
+  background-color: #00796B;
+}
+
+@media only screen and (max-width: 740px){
+  .header ul li{
+    font-size: 20px;
+   
+  }
+
+}
+@media only screen and(min-width: 740px){
+    .header ul li{
+      font-size: 10px;
+      
+    }
+
+}
+@media only screen and (min-width: 980px){
+  .header ul li{
+    font-size: 30px;
+  
+  }
+}
+  @media only screen and (max-width: 1200px){
+    .header ul li{
+      font-size: 35px;
+    
+    }
+
+}
+header ul{
+ 
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-end;
+ 
+  
+}
+header ul li{
+  list-style-type: none;
+  padding-right: 20px;
+ 
+}
+header ul li a{
+  text-decoration: none;
+  color:#5D4037;
+}
+.headings{
+  padding-top: 20px;
+}
+.headings ul li{
+  list-style-type: none;
+}
+.headings ul li:nth-child(2n){
+  color: red;
+}
+.headings ul li:nth-child(3n){
+  color: green;
+}
+.headings ul li:nth-child(4){
+  color: black;
+ 
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  background: red;
+  position: relative;
+  border-radius: 50%;
+  animation: myCircle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.circle-header{
+height: 400px ;
+}
+
+@keyframes myCircle{
+  0%   {
+    background: red;
+    left:0px; 
+    top: 0px;}
+  25%  {
+    background: black; 
+    left: 800px; 
+    top: 0px;}
+  50%  {
+    background: green; 
+    left:800px; 
+    top: 200px;}
+  75%  {
+    background: blue; 
+    left: 0px; 
+    top: 200px;}
+  100% {
+    background: red; 
+    left: 0px; 
+    top: 0px;}
+}
+
+@media only screen and (max-width: 675px){
+
+  .circle{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    border-radius: 50%;
+    animation: myCircle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  .circle-header{
+  height: 400px ;
+  }
+  
+  @keyframes myCircle{
+    0%   {
+      background: red;
+      left:0px; 
+      top: 0px;}
+    25%  {
+      background: black; 
+      left: 3px; 
+      top: 0px;}
+    50%  {
+      background: green; 
+      left:3px; 
+      top: 200px;}
+    75%  {
+      background: blue; 
+      left: 0px; 
+      top: 200px;}
+    100% {
+      background: red; 
+      left: 0px; 
+      top: 0px;}
+  }
+}
+@media only screen and (max-width: 740px){
+
+  .circle{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    border-radius: 50%;
+    animation: myCircle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  .circle-header{
+  height: 400px ;
+  }
+  
+  @keyframes myCircle{
+    0%   {
+      background: red;
+      left:0px; 
+      top: 0px;}
+    25%  {
+      background: black; 
+      left: 200px; 
+      top: 0px;}
+    50%  {
+      background: green; 
+      left:200px; 
+      top: 200px;}
+    75%  {
+      background: blue; 
+      left: 0px; 
+      top: 200px;}
+    100% {
+      background: red; 
+      left: 0px; 
+      top: 0px;}
+  }
+}
+
+@media only screen and (max-width: 980px){
+
+  .circle{
+    width: 150px;
+    height: 150px;
+    background: red;
+    position: relative;
+    border-radius: 50%;
+    animation: myCircle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  .circle-header{
+  height: 400px ;
+  }
+  
+  @keyframes myCircle{
+    0%   {
+      background: red;
+      left:0px; 
+      top: 0px;}
+    25%  {
+      background: black; 
+      left: 500px; 
+      top: 0px;}
+    50%  {
+      background: green; 
+      left: 500px; 
+      top: 200px;}
+    75%  {
+      background: blue; 
+      left: 0px; 
+      top: 200px;}
+    100% {
+      background: red; 
+      left: 0px; 
+      top: 0px;}
+  }
+}
+@media only screen and (min-width: 1200px){
+
+  .circle{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: relative;
+    border-radius: 50%;
+    animation: myCircle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  .circle-header{
+  height: 400px ;
+  }
+  
+  @keyframes myCircle{
+    0%   {
+      background: red;
+      left:0px; 
+      top: 0px;}
+    25%  {
+      background: black; 
+      left: 1000px; 
+      top: 0px;}
+    50%  {
+      background: green; 
+      left: 1000px; 
+      top: 200px;}
+    75%  {
+      background: blue; 
+      left: 0px; 
+      top: 200px;}
+    100% {
+      background: red; 
+      left: 0px; 
+      top: 0px;}
+  }
+}
+.boxes{
+
+  display: flex;
+  padding:50px 30px;
+  text-align: center;
+  margin:10px 20px;
+ 
+
+ 
+}
+
+.boxes .p1{
+  background-color: #4CAF50;
+  margin-right: 10px;
+
+}
+
+.boxes .p2{
+  background-color: #8ed490;
+  margin-right: 10px;
+}
+
+.boxes .p3{
+  background-color: #165818;
+  margin-right: 10px;
+}
+.boxes a{
+  text-decoration: none;
+  color: black;
+}
+.boxes .p1:hover{
+background-color:#165818;
+transform: scale(2.5); 
+padding-left: 10%;
+text-align: center;
+margin-left: 20px;
+}
+@media only screen and (max-width: 740px){
+  .boxes .p1:hover{
+    background-color:#165818;
+    transform: scale(1.5); 
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    margin-left: 20px;
+  }
+  }
+
+ 
+@media only screen and (min-width: 740px){
+  .boxes .p1:hover{
+    background-color:#165818;
+    transform: scale(1.5); 
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+}
+@media only screen and (min-width: 980px){
+  .boxes .p1:hover{
+    background-color:#165818;
+    transform: scale(1.5); 
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    
+  }
+
+}
+@media only screen and (max-width: 980px){
+  .boxes .p1:hover{
+    background-color:#165818;
+    transform: scale(1.5); 
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    margin-left: 30px;
+    
+  }
+
+}
+@media only screen and (min-width: 1200px){
+  .boxes .p1:hover{
+    background-color:#165818;
+    transform: scale(1.5); 
+    padding-left: 40px;
+    /* padding-right: 40px; */
+    text-align: center;
+    margin-left: 10%;
+  }
+
+}
+.boxes .p2:hover{
+  background-color:#0da812;
+  transform: scale(1.5); 
+text-align: center;
+  }
+  @media screen and (max-width: 740px){
+    .boxes .p2:hover{
+      background-color:#0da812;
+      transform: scale(1.5); 
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center;
+      margin-left: 20px;
+    }
+  
+  }
+  @media only screen and (max-width: 980px){
+    .boxes .p2:hover{
+      background-color:#0da812;
+      transform: scale(1.5); 
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center;
+      margin-left: 30px;
+      
+    }
+  
+  }
+  @media only screen and (min-width: 1200px){
+    .boxes .p2:hover{
+      background-color:#0da812;
+      transform: scale(1.5); 
+      padding-left: 40px;
+      padding-right: 40px;
+      text-align: center;
+    }
+  
+  }
+
+  .boxes .p3:hover{
+    background-color:#7ee281;
+    transform: scale(1.5); 
+padding-right: 10%;
+text-align: center;
+
+    }
+    @media screen and (max-width: 740px){
+      .boxes .p3:hover{
+        background-color:#7ee281;
+        transform: scale(1.5); 
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+      
+      }
+    
+    }
+    @media only screen and (max-width: 980px){
+      .boxes .p3:hover{
+        background-color:#7ee281;
+        transform: scale(1.5); 
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        margin-right: 30px;
+        
+      }
+    
+    }
+    @media only screen and (min-width: 1200px){
+      .boxes .p3:hover{
+        background-color:#7ee281;
+        transform: scale(1.5); 
+        /* padding-left: 40px; */
+        padding-right: 40px;
+        text-align: center;
+        margin-right: 10%;
+      }
+    
+    }
+
+  footer{
+    background-color: #00796B;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  table{
+    padding: 15px;
+
+  }
+  table tr td:nth-child(2n){
+    background-color: #795548;
+  }
+  table tr td:nth-child(2n-1){
+    background-color: #ada7a5;
+  }
